@@ -7,7 +7,17 @@ title = "Hugo FixIt"
 baseURL = "https://example.org/"
 theme = [
   "FixIt",
-  "shortcode-docs-bookmark"
+  "cmpt-flyfish",
+  "cmpt-mdevtools",
+  "cmpt-translate",
+  "component-projects",
+  "hugo-atom-feed",
+  "hugo-json-feed",
+  "shortcode-asciinema",
+  "shortcode-caniuse",
+  "shortcode-docs-bookmark",
+  "shortcode-mmt-netease",
+  "short-rewards"
 ]
 defaultContentLanguage = "en"
 languageCode = "en"
