@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 title = "Hugo FixIt"
-baseURL = "https://example.org/"
+baseURL = "https://example.com/"
 theme = [
   "FixIt",
   "cmpt-flyfish",
@@ -17,7 +17,7 @@ theme = [
   "shortcode-caniuse",
   "shortcode-docs-bookmark",
   "shortcode-mmt-netease",
-  "short-rewards"
+  "shortcode-rewards"
 ]
 defaultContentLanguage = "en"
 languageCode = "en"

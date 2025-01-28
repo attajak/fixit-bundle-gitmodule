@@ -1,23 +1,23 @@
 {
-  "name": "hugo-fixit-starter1",
+  "name": "hugo-fixit-test",
   "version": "1.0.0",
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses Git submodule feature to load the theme.",
   "main": "index.js",
   "scripts": {
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/ -O",
+    "server": "hugo server -D -E -F --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost/ -O",
     "server:production": "npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge -- ./themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "update:component": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugo-fixit/hugo-fixit-starter1.git"
+    "url": "git+https://github.com/attajak/hugo-fixit-test.git"
   },
-  "author": "Lruihao (https://github.com/Lruihao)",
+  "author": "attajak (https://github.com/attajak)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hugo-fixit/hugo-fixit-starter1/issues"
+    "url": "https://github.com/attajak/hugo-fixit-test/issues"
   },
-  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter1#readme"
+  "homepage": "https://github.com/attajak/hugo-fixit-test#readme"
 }
