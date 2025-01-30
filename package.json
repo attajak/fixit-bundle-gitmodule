@@ -8,7 +8,7 @@
     "server": "hugo server -D -E -F --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost/ -O",
     "server:production": "npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge -- ./themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
-    "update:themes": "git submodule update --remote --merge && git add -A && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
+    "update:themes": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",

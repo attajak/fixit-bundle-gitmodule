@@ -1,4 +1,4 @@
-_merge = shallow
+_merge = "shallow"
 home = ["html", "rss", "jsonfeed", "archives", "offline", "search"]
 page = ["html", "markdown"]
 section = ["html", "rss", "jsonfeed"]
