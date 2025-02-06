@@ -1,5 +1,5 @@
-- title: My developed
-  description: Below are some open source works I have developed.
+- title: 'My developed'
+  description: 'Below are some open source works I have developed.'
   contentAdapters: false
   params:
     hiddenFromHomePage: true
@@ -14,9 +14,9 @@
   # Order of repos, optional values: ['asc', 'desc']
   order: asc
   repos:
-    - hugo-fixit/FixIt
-- title: My contributed
-  description: Below are some open source works I have contributed to.
+    - attajak/hugo-fixit-bundle
+- title: 'My contributed'
+  description: 'Below are some open source works I have contributed to.'
   contentAdapters: false
   params:
     hiddenFromHomePage: true

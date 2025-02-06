@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Update theme
-        run: git submodule update --remote --merge # themes/FixIt
+        run: git submodule update --remote --merge # -- ./themes/FixIt
 
       - name: Generate hugo-fixit component list
         uses: hugo-fixit/action-component-list@v1

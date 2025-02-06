@@ -1,23 +1,25 @@
 {
-  "name": "hugo-fixit-test",
+  "name": "hugo-fixit-bundle",
+  "private": "true",
   "version": "1.0.0",
-  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses Git submodule feature to load the theme.",
+  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Git submodule feature to load the theme.",
   "main": "index.js",
   "scripts": {
-    "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost/ -O",
-    "server:production": "npm run server -- --environment production",
+    "create": "hugo new content",
+    "build": "HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info",
+    "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
+    "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge -- ./themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
-    "update:themes": "git submodule update --remote --merge"
+    "update": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/attajak/hugo-fixit-test.git"
+    "url": "git+https://github.com/attajak/hugo-fixit-bundle.git"
   },
   "author": "attajak (https://github.com/attajak)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/attajak/hugo-fixit-test/issues"
+    "url": "https://github.com/attajak/hugo-fixit-bundle/issues"
   },
-  "homepage": "https://github.com/attajak/hugo-fixit-test#readme"
+  "homepage": "https://github.com/attajak/hugo-fixit-bundle#readme"
 }
