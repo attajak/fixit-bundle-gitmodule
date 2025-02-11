@@ -1,4 +1,4 @@
-# Hugo FixIt Components
+# Hugo FixIt Bundle (Components list)
 
 <!-- HUGO_FIXIT_COMPONENTS:START -->
 - [cmpt-flyfish](https://github.com/hugo-fixit/cmpt-flyfish)\
