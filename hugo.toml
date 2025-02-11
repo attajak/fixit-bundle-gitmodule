@@ -11,11 +11,25 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = "Hugo-FixIt"
+title = "Hugo-FixIt-Bundle"
 # Hostname (and path) to the root
-baseURL = "http://localhost:1313"
+baseURL = "https://attajak.github.io/hugo-fixit-bundle" # "http://localhost:1313"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
+theme = [
+  "FixIt",
+  "cmpt-flyfish",
+  "cmpt-mdevtools",
+  "cmpt-translate",
+  "component-projects",
+  "hugo-atom-feed",
+  "hugo-json-feed",
+  "shortcode-asciinema",
+  "shortcode-caniuse",
+  "shortcode-docs-bookmark",
+  "shortcode-mmt-netease",
+  "shortcode-rewards"
+]
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
@@ -25,7 +39,8 @@ languageName = "English"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
-paginate = 12
+[pagination]
+  pageSize = 12
 # copyright description used only for seo schema
 copyright = "attajak <https://attajak.github.io/>"
 # whether to use robots.txt
@@ -234,9 +249,9 @@ enableEmoji = true
 # See: https://gohugo.io/templates/output-formats/#media-types
 # -------------------------------------------------------------------------------------
 
-[mediaTypes]
-  [mediaTypes."application/feed+json"]
-    suffixes = ["json"]
+# [mediaTypes]
+  # [mediaTypes."application/feed+json"]
+    # suffixes = ["json"]
 
 # -------------------------------------------------------------------------------------
 # Output Format Definitions
@@ -324,7 +339,7 @@ enableEmoji = true
   # FixIt 0.2.15 | CHANGED FixIt theme version
   version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
-  description = ""
+  description = "Hugo + FixIt-Bundle"
   # site keywords
   keywords = []
   # site default theme ["light", "dark", "auto"]
@@ -358,15 +373,15 @@ enableEmoji = true
 
   # Author Configuration
   [params.author]
-    name = ""
-    email = ""
-    link = ""
+    name = "attajak"
+    email = "attajak@outlook.com"
+    link = "https://attajak.github.io"
     avatar = ""
 
   # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
   [params.gitInfo]
     # e.g. "https://github.com/hugo-fixit/docs"
-    repo = "https://github.com/attajak/hugo-fixit-test"
+    repo = "https://github.com/attajak/hugo-fixit-bundle"
     branch = "main"
     # the content directory path relative to the root of the repository
     dir = "content"
@@ -377,7 +392,7 @@ enableEmoji = true
   # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "FixIt"
+    title = "Hugo-FixIt-Bundle"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -393,7 +408,7 @@ enableEmoji = true
 
   # Search config
   [params.search]
-    enable = false
+    enable = true
     # type of search engine ["algolia", "fuse", "cse", "post-chat"]
     type = "fuse"
     # max index length of the chunked content
@@ -448,7 +463,7 @@ enableEmoji = true
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "Hugo-FixIt-Bundle"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -458,15 +473,15 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = ""
+      name = "Hugo + FixIt-Bundle"
       # whether to use typeit animation for subtitle name
       typeit = false
 
   # FixIt 0.2.18 | NEW Breadcrumb config
   [params.breadcrumb]
-    enable = false
-    sticky = false
-    showHome = false
+    enable = true
+    sticky = true
+    showHome = true
     # FixIt 0.3.13 | NEW
     separator = "/"
     capitalize = true
@@ -474,7 +489,7 @@ enableEmoji = true
   # FixIt 0.3.10 | NEW Post navigation config
   [params.navigation]
     # whether to show the post navigation in section pages scope
-    inSection = false
+    inSection = true
     # whether to reverse the next/previous post navigation order
     reverse = false
 
@@ -486,7 +501,7 @@ enableEmoji = true
     # whether to show the author
     author = true
     # Site creation year
-    since = ""
+    since = "2025"
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
     gov = ""
     # ICP info only in China (HTML format is supported)
@@ -500,7 +515,7 @@ enableEmoji = true
       themeLogo = true
     # FixIt 0.2.17 | CHANGED Site creation time
     [params.footer.siteTime]
-      enable = false
+      enable = true
       animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
@@ -508,10 +523,10 @@ enableEmoji = true
     # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
     [params.footer.order]
       powered = 0
-      copyright = 0
-      statistics = 0
-      visitor = 0
-      beian = 0
+      copyright = 1
+      statistics = 2
+      visitor = 3
+      beian = 4
 
   # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
   [params.archives]
@@ -566,17 +581,17 @@ enableEmoji = true
   [params.home]
     # Home page profile
     [params.home.profile]
-      enable = false
+      enable = true
       # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
+      gravatarEmail = "janrak@gmail.com"
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/about/"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Attajak Janrak"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = ""
+      subtitle = "https://attajak.github.io"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -591,14 +606,14 @@ enableEmoji = true
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = ""
+    GitHub = "attajak"
     Linkedin = ""
-    Twitter = ""
+    Twitter = "attajak"
     Instagram = ""
-    Facebook = ""
+    Facebook = "attajak"
     Telegram = ""
     Medium = ""
-    Gitlab = ""
+    Gitlab = "attajak"
     Youtubelegacy = ""
     Youtubecustom = ""
     Youtubechannel = ""
@@ -824,7 +839,7 @@ enableEmoji = true
 
   # Cookie consent config
   [params.cookieconsent]
-    enable = true
+    enable = false
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
@@ -848,18 +863,18 @@ enableEmoji = true
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = false
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    enable = true
+    permalink = "https://github.com/attajak/hugo-fixit-bundle/"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
 
   # FixIt 0.2.14 | NEW Gravatar config
   [params.gravatar]
     # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
-    enable = false
+    enable = true
     # Gravatar host, default: "www.gravatar.com"
     host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
-    style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
+    style = "monsterid" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
   # FixIt 0.2.16 | NEW Back to top
   [params.backToTop]
@@ -991,12 +1006,12 @@ enableEmoji = true
 
   # Mobile Devtools config
   [params.mDevtools]
-    enable = false
+    enable = true
     # "eruda", "vConsole" supported
     type = "eruda"
 
   [params.autoTranslate]
-    enable = true
+    enable = false
     service = 'client.edge'
     languages = []
     ignoreID = []
@@ -1036,7 +1051,7 @@ enableEmoji = true
     # FixIt 0.3.10 | NEW whether to hide a page from RSS, Atom and JSON feed
     hiddenFromFeed = false
     # whether to enable twemoji
-    twemoji = false
+    twemoji = true
     # FixIt 0.2.18 | CHANGED whether to enable lightgallery
     # set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
     # set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
@@ -1199,7 +1214,7 @@ enableEmoji = true
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Myspace = false
       Blogger = false
       Baidu = false
