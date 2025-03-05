@@ -42,7 +42,7 @@ disableThemeInject = false
 [author]
   name = "attajak"
   email = "janrak@gmail.com"
-  link = "https://attajak.github.io/"
+  link = "https://github.com/attajak/"
   avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
@@ -173,7 +173,7 @@ disableThemeInject = false
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = ""
-    value = "2025-01-26T07:31:11.998Z" # e.g. "2021-12-18T16:15:22+08:00"
+    value = "2025-02-22T11:56:21.384Z" # e.g. "2021-12-18T16:15:22+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 0

@@ -3,8 +3,8 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt"
-baseURL = "https://example.com/"
+title = "Hugo + FixIt"
+baseURL = "https://attajak.github.io/hugo-fixit-bundle"
 theme = [
   "FixIt",
   "cmpt-flyfish",
@@ -18,7 +18,7 @@ theme = [
   "shortcode-docs-bookmark",
   "shortcode-mmt-netease",
   "shortcode-rewards"
-]
+  ]
 defaultContentLanguage = "en"
 languageCode = "en"
 hasCJKLanguage = true
@@ -29,4 +29,4 @@ relativeURLs = false
 buildDrafts = false
 summaryLength = 150
 # ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken", "warning-dev-version"]
