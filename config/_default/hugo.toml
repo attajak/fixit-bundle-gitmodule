@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 title = "Hugo + FixIt"
-baseURL = "https://attajak.github.io/hugo-fixit-bundle"
+baseURL = "/fixit-bundle-gitmodule/"
 theme = [
   "FixIt",
   "cmpt-flyfish",
