@@ -3,7 +3,7 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo + FixIt"
+title = "Hugo + FixIt-bundle"
 baseURL = "/fixit-bundle-gitmodule/"
 theme = [
   "FixIt",
