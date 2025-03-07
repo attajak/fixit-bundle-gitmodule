@@ -1,5 +1,5 @@
 {
-  "name": "hugo-fixit-bundle",
+  "name": "fixit-bundle-gitmodule",
   "private": "true",
   "version": "1.0.0",
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Git submodule feature to load the theme.",
@@ -9,17 +9,16 @@
     "build": "HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
     "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge -- ./themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "update": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/attajak/hugo-fixit-bundle.git"
+    "url": "git+https://github.com/attajak/fixit-bundle-gitmodule.git"
   },
   "author": "attajak (https://github.com/attajak)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/attajak/hugo-fixit-bundle/issues"
+    "url": "https://github.com/attajak/fixit-bundle-gitmodule/issues"
   },
-  "homepage": "https://github.com/attajak/hugo-fixit-bundle#readme"
+  "homepage": "https://github.com/attajak/fixit-bundle-gitmodule#readme"
 }
