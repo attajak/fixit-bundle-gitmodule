@@ -1,4 +1,4 @@
-name: Update theme
+name: Update modules
 
 # Controls when the workflow will run
 on:
@@ -18,10 +18,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: recursive
 
-      - name: Update theme
+      - name: Update modules
         run: git submodule update --remote --merge # -- ./themes/FixIt
 
       - name: Generate hugo-fixit component list
@@ -37,5 +36,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: ':arrow_up: Chore(theme): Update theme'
+          commit_message: ':arrow_up: Chore(modules): Update modules'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'

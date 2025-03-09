@@ -10,7 +10,7 @@ on:
       - 'static/**'
       - 'themes/**'
   workflow_run:
-    workflows: ['Update theme']
+    workflows: ['Update modules']
     types:
       - completed
   workflow_dispatch:

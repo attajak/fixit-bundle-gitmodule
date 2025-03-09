@@ -91,3 +91,14 @@
   weight = 40
   [main.params]
     icon = "fa-solid fa-signature"
+[[main]]
+  identifier = "contact"
+  parent = ""
+  pre = ""
+  post = ""
+  name = "Contact"
+  url = "/contact/"
+  title = ""
+  weight = 50
+    [main.params]
+      icon = "fa-solid fa-envelope"
