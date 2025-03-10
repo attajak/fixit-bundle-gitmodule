@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "create": "hugo new content",
-    "build": "HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info",
+    "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
-    "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
-    "update": "git submodule update --remote --merge"
+    "server:production": "npm run server -- --environment production",
+    "update": "git submodule update --init --recursive && git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
