@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  Update-FixIt:
+  Update-FixIt-bundle:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -21,7 +21,7 @@ jobs:
           submodules: recursive
 
       - name: Update modules
-        run: git submodule update --remote --merge # -- ./themes/FixIt
+        run: git submodule update --remote --merge
 
       - name: Generate hugo-fixit component list
         uses: hugo-fixit/action-component-list@v1
