@@ -12,14 +12,15 @@ updates:
     open-pull-requests-limit: 1000
     assignees:
       - "attajak"
-    # labels:
-      # - "dependencies"
+    labels:
+      - "dependencies"
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily" # Default "monthly"
+      interval: "daily"
     open-pull-requests-limit: 1000
     assignees:
       - "attajak"
-    # labels:
-      # - "dependencies"
+    labels:
+      - "dependencies"
+      - "components"
