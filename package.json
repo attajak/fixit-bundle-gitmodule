@@ -9,7 +9,8 @@
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
     "server:production": "npm run server -- --environment production",
-    "update": "git submodule update --init --recursive && git submodule update --remote --merge"
+    "mods:prepare": "git submodule update --init --recursive",
+    "mods:update": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
